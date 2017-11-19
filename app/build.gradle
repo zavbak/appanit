@@ -1,10 +1,11 @@
 apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
 
 android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "ru.a799000.alexander.appanit"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -15,6 +16,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
     }
 }
 
@@ -44,10 +50,19 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
 
-    //draweble
+    //Draweble
     compile('com.mikepenz:materialdrawer:5.9.5@aar') {
         transitive = true
     }
     compile 'com.mikepenz:google-material-typeface:2.2.0.2.original@aar'
+
+    compile 'com.android.support:recyclerview-v7:26.0.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+
+    compile 'com.android.support:cardview-v7:26.0.0'
+    compile 'com.android.support:recyclerview-v7:26.0.0'
+
+
+
 
 }
