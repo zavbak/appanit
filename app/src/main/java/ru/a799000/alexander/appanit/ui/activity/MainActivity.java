@@ -39,7 +39,7 @@ public class MainActivity extends BaseActivity implements MainView {
     void init() {
         setUpDrawer();
         if (mPresenter.getCurentScreen() == 0) {
-            mDrawer.setSelection(1);
+            mDrawer.setSelection(1); //start screen
         } else {
             mDrawer.setSelectionAtPosition(mPresenter.getCurentScreen(), false);
         }
