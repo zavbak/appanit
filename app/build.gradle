@@ -50,9 +50,19 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
 
+    //Draweble
     compile('com.mikepenz:materialdrawer:5.9.5@aar') {
         transitive = true
     }
     compile 'com.mikepenz:google-material-typeface:2.2.0.2.original@aar'
+
+    compile 'com.android.support:recyclerview-v7:26.0.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+
+    compile 'com.android.support:cardview-v7:26.0.0'
+    compile 'com.android.support:recyclerview-v7:26.0.0'
+
+
+
 
 }
