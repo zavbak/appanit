@@ -5,6 +5,7 @@ import javax.inject.Singleton;
 import dagger.Component;
 import ru.a799000.alexander.appanit.di.module.ApplicationModule;
 import ru.a799000.alexander.appanit.di.module.ManagerModule;
+import ru.a799000.alexander.appanit.mvp.presenter.MainPresenter;
 import ru.a799000.alexander.appanit.ui.activity.BaseActivity;
 import ru.a799000.alexander.appanit.ui.activity.MainActivity;
 
@@ -20,5 +21,7 @@ public interface ApplicationComponent {
     void inject(BaseActivity activity);
 
     void inject(MainActivity activity);
+
+    void inject(MainPresenter presenter);
 
 }
