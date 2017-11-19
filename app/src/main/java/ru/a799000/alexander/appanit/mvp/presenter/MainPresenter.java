@@ -10,4 +10,6 @@ import ru.a799000.alexander.appanit.mvp.view.MainView;
 public class MainPresenter extends MvpPresenter<MainView> {
 
 
+    public void drawerItemClick(int identifier) {
+    }
 }
